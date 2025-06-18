@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/login"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_login"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/premium"
+        android:title="@string/premium"
+        android:icon="@drawable/ic_premium"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always" />
+  <!--  <item
+        android:id="@+id/privacy_settings"
+        android:title="@string/privacy_settings"
+        android:icon="@drawable/ic_gdpr_settings"
+        android:visible="false"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/consent"
+                android:title="@string/privacy_settings"
+                android:titleCondensed="@string/privacy_settings" />
+        </menu>
+    </item>-->
+</menu>

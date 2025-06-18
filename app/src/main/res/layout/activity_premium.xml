@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.PremiumActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/purchase_coins"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/availableCoinsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbarLayout">
+
+        <ImageView
+            android:id="@+id/icAvailableCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_available_coin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvAvailableCoins"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/available_coins"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvCoinsCount"
+            app:layout_constraintStart_toEndOf="@+id/icAvailableCoins"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCoinsCount"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rect_rounded_blue"
+            android:gravity="center"
+            android:text="00.00"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="@string/after_topping_up_your_balance"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availableCoinsLayout"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvDescription1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/pay_only_for_messages_you_receive"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <TextView
+        android:id="@+id/tvDescription2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/access_a_wide_range_of_phone_numbers"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription1" />
+
+    <TextView
+        android:id="@+id/tvDescription3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/supports_numerous_services"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription2" />
+
+    <TextView
+        android:id="@+id/tvDescription4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/unlimited_incoming_sms"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription3" />
+
+    <TextView
+        android:id="@+id/tvDescription5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/phone_numbers_available_for_20_mins_rentals"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription4" />
+
+    <TextView
+        android:id="@+id/coin_1_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintEnd_toStartOf="@+id/coin_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1" />
+
+    <TextView
+        android:id="@+id/coin_1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_1_coin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/coin_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription5" />
+
+    <TextView
+        android:id="@+id/coin_4_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:backgroundTint="@color/light_green"
+        app:layout_constraintEnd_toStartOf="@+id/coin_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_1_bg"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1" />
+
+    <TextView
+        android:id="@+id/coin_4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_4_coins"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/coin_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription5" />
+
+    <TextView
+        android:id="@+id/coin_6_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:backgroundTint="@color/light_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_4"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1" />
+
+    <TextView
+        android:id="@+id/coin_6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_6_coins"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_4"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription5" />
+
+    <TextView
+        android:id="@+id/coin_8_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/coin_10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_8" />
+
+    <TextView
+        android:id="@+id/coin_8"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_8_coins"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/coin_10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1" />
+
+    <TextView
+        android:id="@+id/coin_10_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:backgroundTint="@color/light_red"
+        app:layout_constraintEnd_toStartOf="@+id/coin_extra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_8"
+        app:layout_constraintTop_toBottomOf="@+id/coin_8" />
+
+    <TextView
+        android:id="@+id/coin_10"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/rect_rounded_gray"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_10_coins"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/coin_extra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_8"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1" />
+
+    <TextView
+        android:id="@+id/coin_extra"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coin_10"
+        app:layout_constraintTop_toBottomOf="@+id/coin_1"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:background="@drawable/rect_full_rounded_blue"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_extra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

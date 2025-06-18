@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Virtual Number</string>
+    <string name="smsActivate_api_key">07e24f7631c0378B321f559B46945677</string>
+    <string name="loading_data">Loading Data</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="services">Services</string>
+    <string name="rented_numbers">Rented Numbers</string>
+    <string name="number_store">NumStore</string>
+    <string name="premium">Premium</string>
+    <string name="settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="rent_a_number">Rent a Number</string>
+    <string name="activation">Activation</string>
+
+    <string name="activations">Activations</string>
+    <string name="rent">Rent</string>
+    <string name="balance">Balance</string>
+    <string name="frozen">Frozen</string>
+    <string name="unknown">Unknown</string>
+    <string name="purchase_number">Purchase Number</string>
+    <string name="if_no_sms_is_received_within">If no SMS is received within 20 minutes, the number will be deactivated and the amount will be refunded to your balance.</string>
+    <string name="balance_required">Balance Required</string>
+    <string name="_4_days">4 Days</string>
+    <string name="_15_days">15 Days</string>
+    <string name="_1_month">1 Month</string>
+    <string name="_4_hours">4 Hours</string>
+    <string name="_10_hours">10 Hours</string>
+    <string name="_20_hours">20 Hours</string>
+    <string name="search_services">Search services…</string>
+    <string name="no_data">No data</string>
+    <string name="search_countries">Search countries…</string>
+    <string name="purchase_coins">Purchase Coins</string>
+    <string name="available_coins">Available Coins</string>
+    <string name="after_topping_up_your_balance">After topping up your balance, you can continue to purchase virtual numbers by selecting a subscription model.</string>
+    <string name="pay_only_for_messages_you_receive">Pay only for messages you receive</string>
+    <string name="access_a_wide_range_of_phone_numbers">Access a wide range of phone numbers</string>
+    <string name="supports_numerous_services">Supports numerous services</string>
+    <string name="unlimited_incoming_sms">Unlimited incoming SMS</string>
+    <string name="phone_numbers_available_for_20_mins_rentals">Phone numbers available for 20 minutes rentals</string>
+    <string name="_1_coin">1 Coin\n  <br><font color="#CE6B6969">3$</font></br></string>
+    <string name="_4_coins">4 Coins\n  <br><font color="#CE6B6969">6$</font></br></string>
+    <string name="_6_coins">6 Coins\n  <br><font color="#CE6B6969">12$</font></br></string>
+    <string name="_8_coins">8 Coins\n  <br><font color="#CE6B6969">21$</font></br></string>
+    <string name="_10_coins">10 Coins\n  <br><font color="#CE6B6969">33$</font></br></string>
+    <string name="error_loading_data">Error Loading Data</string>
+    <string name="default_web_client_id">AIzaSyCG5N_VUJ5mEntKigV8TyWyvaHAPhEP4Xk</string>
+</resources>

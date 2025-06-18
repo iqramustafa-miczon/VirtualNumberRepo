@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903328682095",
+    "project_id": "virtual-number-9a4a3",
+    "storage_bucket": "virtual-number-9a4a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903328682095:android:4fad92d30357290eccbd9a",
+        "android_client_info": {
+          "package_name": "com.example.virtualnumber"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG5N_VUJ5mEntKigV8TyWyvaHAPhEP4Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
